@@ -1,0 +1,20 @@
+{
+  "name": "cadastro_vendas",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": " node-sass --watch  assets/css/style.scss assets/css/style.css ",
+    "sass-min": " node-sass --watch  assets/css/style.scss assets/css/style.min.css "
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@popperjs/core": "^2.0.5",
+    "bootstrap": "^4.4.1",
+    "bootstrap-icons": "^1.0.0-alpha2",
+    "jquery": "^3.4.1",
+    "popper.js": "^1.16.1"
+  }
+}

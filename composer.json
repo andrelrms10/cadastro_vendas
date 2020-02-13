@@ -1,0 +1,27 @@
+{
+    "name": "andrelrms10/cadastro_vendas",
+    "description": "projeto DEV PHP I",
+    "minimum-stability": "stable",
+    "license": "MIT",
+    
+
+    "config": {
+        "vendor-dir": "vendor"
+    },
+
+    "autoload": {
+        "psr-4": {
+            "Source\\": "source/"
+        },
+        "files": [
+            "source/Config.php"
+        ]
+    },
+
+    "require": {
+        "mpdf/mpdf": "^8.0",
+        "phpmailer/phpmailer": "^6.1",
+        "dompdf/dompdf": "^0.8.4",
+        "knplabs/knp-snappy": "^1.2"
+    }
+}
