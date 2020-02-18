@@ -37,7 +37,7 @@ class EmailController extends controller
         $mail->SMTPAuth = true;
         $mail->SMTPSecure = 'tls';
         $mail->Username = 'andreluizrms102@gmail.com';
-        $mail->Password = 'belaisa123';
+        $mail->Password = '********';
         $mail->Port = 587;
 
         $mail->setFrom('andreluizrms102@gmail.com');
