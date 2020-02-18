@@ -19,27 +19,50 @@
 	</head>
 
 	<body>
+		<style>
+			.btn-primary {
+				background-color: #141759 !important;
+				border: none !important;
+
+			}
+		</style>
 
 		<header>
-			<nav class="navbar navbar-expand-md navbar-default">
-
+			<div class="container">
 				<nav class="navbar navbar-expand-md navbar-default">
-					<ul class="navbar-nav mr-auto">
-						<li class="nav-item active">
-							<a class="nav-link" href="<?php echo BASE_URL; ?>">Vendas</a>
-						</li>
-						<li class="nav-item">
-							<a class="nav-link" href="<?php echo BASE_URL; ?>vendedor">Vendedores</a>
-						</li>
-					</ul>
+
+					<nav class="navbar navbar-expand-md navbar-default">
+						<ul class="navbar-nav mr-auto">
+							<li class="nav-item">
+								<a class="nav-link" href="<?php echo BASE_URL; ?>">Vendas</a>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="<?php echo BASE_URL; ?>vendedor">Vendedores</a>
+							</li>
+							<li class="nav-item">
+								<div class="dropdown">
+									<a class=" btn btn-primary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										Relatórios
+									</a>
+									<div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+										<a class="dropdown-item" href="<?php echo BASE_URL; ?>relatorio">Vendas Diárias</a>
+									</div>
+								</div>
+							</li>
+							<li class="nav-item">
+								<a class="nav-link" href="<?php echo BASE_URL; ?>Email">Email</a>
+							</li>
+						</ul>
+					</nav>
 				</nav>
-			</nav>
+			</div>
 		</header>
+
 
 
 		<section>
 			<div class="container">
-				<?php $this->loadViewInTemplate($viewName, $viewData);   ?>
+				<?php $this->loadViewInTemplate($viewName, $viewData); ?>
 			</div>
 		</section>
 

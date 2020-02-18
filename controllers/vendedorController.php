@@ -28,7 +28,7 @@ class vendedorController extends controller
 			$dados['error'] = $_GET['error'];
 		}
 
-		$this->loadTemplate('adicionar_vendedor', $dados);
+		$this->loadTemplate('adicionarVendedor', $dados);
 	}
 
 	//Salva cadastro do vendedor
@@ -77,6 +77,9 @@ class vendedorController extends controller
 		}
 		header("Location: " . BASE_URL . 'vendedor');
 	}
+
+
+
 
 	// Deleta um cadastro de vendedor
 	public function del($id)

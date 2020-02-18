@@ -40,7 +40,7 @@ class vendaController extends controller
 
         $this->arrayInfo['list_vend'] = $vend->listarTodosVendedores();
 
-        $this->loadTemplate('adicionar_venda', $this->arrayInfo);
+        $this->loadTemplate('adicionarVenda', $this->arrayInfo);
     }
 
     //Função salva um novo cadastro de venda

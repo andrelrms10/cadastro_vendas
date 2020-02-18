@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 
 <head>
     <meta charset="utf-8">
@@ -12,20 +12,16 @@
 </head>
 
 <body>
-    <div class="container">
-        <h3>Editar Vendedor:</h3>
-        <form method="POST">
-            <div class="form-group">
-                <label>Nome</label>
-                <input type="text" class="form-control" name='nome' value="<?php echo $info['nome']; ?>">
-            </div>
-            <div class="form-group">
-                <label>Email</label>
-                <input type="email" class="form-control" name="email" value="<?php echo $info['email']; ?>">
-            </div>
-            <button type="submit" class="btn btn-dark">Salvar</button>
-        </form>
-    </div>
-    <body>
-
-</html>
+    <h3>Editar Vendedor:</h3>
+    <form method="POST">
+        <div class="form-group">
+            <label>Nome</label>
+            <input type="text" class="form-control" name='nome' value="<?php echo $info['nome']; ?>">
+        </div>
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" class="form-control" name="email" value="<?php echo $info['email']; ?>">
+        </div>
+        <button type="submit" class="btn btn-dark">Salvar</button>
+    </form>
+</body>
